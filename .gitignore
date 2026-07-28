@@ -1,0 +1,100 @@
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+env/
+.env
+.env.local
+*.egg-info/
+.eggs/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# IDEs / editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# EEG data — NOTHING under data/ is distributed with this repo. Every dataset
+# is obtained from its original source by the user; see README.md "Getting the
+# data" and the per-dataset data/*.README.md notes for layout.
+#
+# BCI Competition IV GDF distribution lives under data/BCICIV_* and the
+# post-competition true labels under data/true_labels/; MOABB-cached .mat lives
+# outside the repo at ~/mne_data.
+data/BCICIV_2a_gdf/
+data/BCICIV_2b_gdf/
+data/true_labels/
+# STEW (Lim 2018) — open-access on IEEE DataPort, requires manual download.
+# Layout expected by src/thesis/data/stew_load.py is documented in
+# data/STEW.README.md. Run `make stew-check` after extracting.
+data/STEW/
+# WAUC (Albuquerque 2020) — ~4 GB extracted from process.rar; reproducible
+# via the documented download path (see data/WAUC.README.md). Run
+# `make wauc-check` after extracting. Never committed.
+data/WAUC/
+
+# Near-ear reframe datasets — placed under
+# new_datasets/ and NEVER committed: ~33 GB total and reproducible via
+# documented open-access download paths.
+#   new_datasets/workload_dataset/  — UAB Flight-Deck (Hernández-Sabaté 2024),
+#       Emotiv EPOC X 14-ch n-back; DOI 10.5565/ddd.uab.cat/259591.
+#   new_datasets/7413650/           — COG-BCI database (Hinss/Roy 2022),
+#       64-ch ActiCap, 29 subjects × 3 sessions; Zenodo record 7413650.
+#   new_datasets/5055046/           — COG-BCI cross-session competition split
+#       (MATB, 2 sessions); Zenodo record 5055046.
+new_datasets/
+
+# Global data-format ignores — catch binary EEG / intermediate artifacts.
+*.gdf
+*.mat
+*.h5
+*.hdf5
+*.pkl
+*.npy
+*.npz
+
+# Model artifacts / experiment tracking
+checkpoints/
+mlruns/
+wandb/
+*.pt
+*.pth
+*.onnx
+
+# Logs
+*.log
+logs/
+
+# Claude Code per-project runtime state
+.claude/
+
+# Transient run logs (from tee during background jobs)
+results/*.log
+results/.*.log
+
+# Generated demo artifacts — rebuild with scripts/build_demos.py (HTML) and
+# scripts/make_demo_videos.py (MP4). See README.md "Interactive demos".
+# Leading slash: root-level only, so scripts/ subdirectories are unaffected.
+/demos/
+
+# Generated figures — rebuild with scripts/figures/make_figures.py from the
+# committed results/*.csv. (Root-level only: scripts/figures/ is source.)
+/figures/
+
+# Standalone LaTeX notes and their build artifacts.
+/reports/

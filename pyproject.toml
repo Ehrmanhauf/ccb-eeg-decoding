@@ -1,0 +1,93 @@
+[project]
+name = "thesis"
+version = "0.1.0"
+description = "Constrained Contextual Bandits for resource-limited EEG decoding: a leakage-controlled, multi-paradigm evaluation"
+readme = "README.md"
+requires-python = ">=3.11,<3.13"
+authors = [{ name = "Muhammet Nurullah Cebeci" }]
+license = "MIT"
+
+dependencies = [
+    # Core EEG I/O — primary data path is MNE's GDF reader against the
+    # user-supplied BCI-IV distribution under data/ (see src/thesis/data/load.py).
+    "mne>=1.7",
+    # MOABB is NOT on the primary data path. Kept as a core dep because:
+    #   1. Cross-validation: run moabb.pipelines.FBCSP_SVM on BNCI2014_001
+    #      to sanity-check our own FBCSP implementation against a reference.
+    #   2. Phase-5 extensions: cognitive-load / fatigue / drowsiness datasets
+    #      (Cho2017, PhysionetMI, Shin2017, etc.) — MOABB is the one-liner.
+    #   3. Formulation C (cross-subject transfer): multi-dataset access
+    #      standardized by MOABB's Paradigm/Dataset abstractions.
+    # See CLAUDE.md "Technical stack" for the primary-vs-secondary split.
+    "moabb>=1.5",
+    # Scientific stack (modern numpy 2.x compatible)
+    "numpy>=2.0",
+    "scipy>=1.13",
+    "scikit-learn>=1.5",
+    "pandas>=2.2",
+    # Visualization
+    "matplotlib>=3.8",
+    "seaborn>=0.13",
+    # CLI & logging
+    "typer>=0.12",
+    "rich>=13.7",
+    "tqdm>=4.66",
+    "pyyaml>=6.0",
+    # Riemannian features for the CCB arm pool (Phase-5 §2.3 extension).
+    # Provides covariance estimators + tangent-space projection used as a
+    # second feature family alongside log-variance / band-power. ref:
+    # `barachant2012riemann` IEEE TBME 59(4) — robust at low channel counts
+    # because the covariance retains class-discriminative structure even
+    # when spatial filtering is rank-limited.
+    "pyriemann>=0.6",
+    # Discrete wavelet transforms for the wavelet-packet feature family
+    # (Phase-5 §2.3 signal-processing alternatives, item 3). Daubechies-4
+    # decomposition replaces the fixed Chebyshev-II filter bank when the
+    # arm.feature == "wavelet_logenergy". ref: Mallat 1989 wavelet theory;
+    # PyWavelets is the canonical Python implementation.
+    "pywavelets>=1.6",
+    "pyarrow>=24.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+    "ruff>=0.4",
+    "mypy>=1.9",
+    "ipykernel>=6.29",
+]
+demos = [
+    "plotly>=5.20",
+]
+benchmark = [
+    "torch>=2.2",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/thesis"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "W", "N", "UP", "B", "C4", "SIM"]
+ignore = [
+    "E501",  # handled by formatter
+    # Allow scikit-learn convention of capital X for 2-D feature matrices /
+    # 3-D epoch tensors. Used throughout src/thesis/{data,baselines,ccb,...}.
+    "N803",  # argument name should be lowercase
+    "N806",  # variable in function should be lowercase
+    # typer's idiomatic pattern is `typer.Option(...)` in function-argument
+    # defaults; CLI entry points throughout scripts/ use it. The alternative
+    # (module-level singletons) adds friction without a safety benefit here.
+    "B008",  # do not perform function call in argument defaults
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra --strict-markers"

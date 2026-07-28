@@ -1,0 +1,15 @@
+m,dataset,protocol,kappa_mean,kappa_std
+1,BCI-IV-2a,within,0.467,0.223
+1,BCI-IV-2a,official,0.369,0.219
+1,BCI-IV-2b,within,0.215,0.136
+1,BCI-IV-2b,official,0.199,0.124
+2,BCI-IV-2a,within,0.518,0.253
+2,BCI-IV-2a,official,0.401,0.24
+2,BCI-IV-2b,within,0.291,0.151
+2,BCI-IV-2b,official,0.248,0.139
+3,BCI-IV-2a,within,0.542,0.264
+3,BCI-IV-2a,official,0.427,0.236
+3,BCI-IV-2b,within,0.292,0.152
+3,BCI-IV-2b,official,0.267,0.131
+4,BCI-IV-2a,within,0.532,0.248
+4,BCI-IV-2a,official,0.468,0.246

@@ -1,0 +1,12 @@
+cell,protocol,system,detail,kappa,accuracy,chance,n_subjects,source,points_above_chance,accuracy_pct,chance_pct
+"COG-BCI n-back (full), cross-session",cross-session (leakage-clean),best fixed pipeline,bandpower+svm,0.0777,0.3845,0.3333,29,crosssession_cogbci.csv,5.1214,38.4547,33.3333
+"COG-BCI n-back (nearear), cross-session",cross-session (leakage-clean),best fixed pipeline,bandpower+random_forest,0.0617,0.3743,0.3333,29,crosssession_cogbci.csv,4.0956,37.4289,33.3333
+"COG-BCI n-back (full), cross-session",cross-session (leakage-clean),CCB,OPLB,0.012,0.3406,0.3333,29,crosssession_cogbci.csv,0.7236,34.0569,33.3333
+"COG-BCI n-back (nearear), cross-session",cross-session (leakage-clean),CCB,OPLB,0.0128,0.3409,0.3333,29,crosssession_cogbci.csv,0.7588,34.0922,33.3333
+"COG-BCI MATB (nearear), cross-session",cross-session (leakage-clean),best fixed pipeline,bandpower+svm,0.2176,0.4784,0.3333,29,crosssession_matb.csv,14.5076,47.8409,33.3333
+"COG-BCI MATB (nearear), cross-session",cross-session (leakage-clean),CCB,OPLB,0.0421,0.3614,0.3333,29,crosssession_matb.csv,2.8068,36.1401,33.3333
+"BCI-IV-2a, 4-class official split",official split,CCB,OPLB,0.1627,0.372,0.25,9,bci2a_4class.csv,12.1991,37.1991,25.0
+"BCI-IV-2a, 4-class official split",official split,best classical pipeline,random_forest,0.4306,0.5729,0.25,9,bci2a_4class_classical.csv,32.2917,57.2917,25.0
+STEW (14 ch),within-subject CV (leakage-confounded),best fixed pipeline,bandpower+lda,0.9525,0.9763,0.3333,45,classical_baselines.csv,64.2942,97.6275,33.3333
+STEW (14 ch),leave-one-subject-out (leakage-clean),fixed pipeline (bandpower),bandpower,0.3285,0.5712,0.3333,45,loso_stew.csv,23.7838,57.1171,33.3333
+STEW (14 ch),leave-one-subject-out (leakage-clean),fixed pipeline (fbcsp),fbcsp,0.2767,0.5502,0.3333,45,loso_stew.csv,21.6817,55.015,33.3333

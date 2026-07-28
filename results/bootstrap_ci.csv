@@ -1,0 +1,6 @@
+cell,best_fixed,n,fixed_mean,fixed_ci_lo,fixed_ci_hi,ccb_mean,ccb_ci_lo,ccb_ci_hi,delta_mean,delta_ci_lo,delta_ci_hi,delta_excludes_zero
+STEW LOSO,bandpower,45,0.3285,0.2533,0.4052,0.2352,0.16,0.3147,0.0932,0.0506,0.1385,True
+WAUC LOSO,bandpower,43,0.0063,-0.0441,0.0611,0.0016,-0.0268,0.0299,0.0047,-0.0329,0.0474,False
+COG-BCI n-back cross (full),bandpower/svm,29,0.0777,0.0484,0.1079,0.012,-0.0035,0.0286,0.0658,0.0421,0.0886,True
+COG-BCI n-back cross (near-ear),bandpower/random_forest,29,0.0617,0.0442,0.0799,0.0128,-0.003,0.0282,0.0489,0.0253,0.0749,True
+COG-BCI MATB competition (full),bandpower/random_forest,15,0.296,0.2494,0.3378,0.1254,0.073,0.1842,0.1706,0.1221,0.2187,True

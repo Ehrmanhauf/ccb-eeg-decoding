@@ -1,0 +1,854 @@
+% =====================================================================
+% CCB Formulation for Low-Channel EEG Motor Imagery — References
+% Compiled 2026-04-19. All entries verified against arXiv / DOI / journal page.
+% =====================================================================
+
+% -------- Contextual bandits with constraints --------
+
+@inproceedings{li2010linucb,
+  author    = {Li, Lihong and Chu, Wei and Langford, John and Schapire, Robert E.},
+  title     = {A Contextual-Bandit Approach to Personalized News Article Recommendation},
+  booktitle = {Proceedings of the 19th International Conference on World Wide Web ({WWW} 2010)},
+  year      = {2010},
+  pages     = {661--670},
+  doi       = {10.1145/1772690.1772758},
+}
+
+@inproceedings{abbasi2011oful,
+  author    = {Abbasi-Yadkori, Yasin and P{\'a}l, D{\'a}vid and Szepesv{\'a}ri, Csaba},
+  title     = {Improved Algorithms for Linear Stochastic Bandits},
+  booktitle = {Advances in Neural Information Processing Systems ({NIPS} 2011)},
+  year      = {2011},
+  pages     = {2312--2320},
+  publisher = {Curran Associates},
+}
+
+@inproceedings{agrawal2013ts,
+  author    = {Agrawal, Shipra and Goyal, Navin},
+  title     = {Thompson Sampling for Contextual Bandits with Linear Payoffs},
+  booktitle = {Proceedings of the 30th International Conference on Machine Learning ({ICML} 2013)},
+  series    = {Proceedings of Machine Learning Research},
+  volume    = {28},
+  year      = {2013},
+  pages     = {127--135},
+}
+
+@article{badanidiyuru2018bwk,
+  author    = {Badanidiyuru, Ashwinkumar and Kleinberg, Robert and Slivkins, Aleksandrs},
+  title     = {Bandits with Knapsacks},
+  journal   = {Journal of the {ACM}},
+  volume    = {65},
+  number    = {3},
+  pages     = {13:1--13:55},
+  year      = {2018},
+  doi       = {10.1145/3164539},
+}
+
+@inproceedings{wu2015cccb,
+  author    = {Wu, Huasen and Srikant, R. and Liu, Xin and Jiang, Chong},
+  title     = {Algorithms with Logarithmic or Sublinear Regret for Constrained Contextual Bandits},
+  booktitle = {Advances in Neural Information Processing Systems ({NIPS} 2015)},
+  year      = {2015},
+}
+
+@inproceedings{agrawal2016linbwk,
+  author    = {Agrawal, Shipra and Devanur, Nikhil R.},
+  title     = {Linear Contextual Bandits with Knapsacks},
+  booktitle = {Advances in Neural Information Processing Systems ({NIPS} 2016)},
+  year      = {2016},
+}
+
+@inproceedings{pacchiano2021linconstr,
+  author    = {Pacchiano, Aldo and Ghavamzadeh, Mohammad and Bartlett, Peter and Jiang, Heinrich},
+  title     = {Stochastic Bandits with Linear Constraints},
+  booktitle = {Proceedings of the 24th International Conference on Artificial Intelligence and Statistics ({AISTATS} 2021)},
+  series    = {Proceedings of Machine Learning Research},
+  volume    = {130},
+  year      = {2021},
+}
+
+% -------- Bandits in BCI / EEG --------
+
+@inproceedings{fruitet2012neurips,
+  author    = {Fruitet, Joan and Carpentier, Alexandra and Munos, R{\'e}mi and Clerc, Maureen},
+  title     = {Bandit Algorithms Boost Brain Computer Interfaces for Motor-Task Selection of a Brain-Controlled Button},
+  booktitle = {Advances in Neural Information Processing Systems ({NIPS} 2012)},
+  year      = {2012},
+}
+
+@article{fruitet2013ucbclassif,
+  author  = {Fruitet, Joan and Carpentier, Alexandra and Munos, R{\'e}mi and Clerc, Maureen},
+  title   = {Automatic Motor Task Selection via a Bandit Algorithm for a Brain-Controlled Button},
+  journal = {Journal of Neural Engineering},
+  volume  = {10},
+  number  = {1},
+  pages   = {016012},
+  year    = {2013},
+  doi     = {10.1088/1741-2560/10/1/016012},
+}
+
+@inproceedings{ma2021tsp300,
+  author    = {Ma, Tianwen and Huggins, Jane E. and Kang, Jian},
+  title     = {Adaptive Sequence-Based Stimulus Selection in an {ERP}-Based Brain-Computer Interface by Thompson Sampling in a Multi-Armed Bandit Problem},
+  booktitle = {Proceedings of the {IEEE} International Conference on Bioinformatics and Biomedicine ({BIBM})},
+  year      = {2021},
+  pages     = {3648--3655},
+  doi       = {10.1109/BIBM52615.2021.9669724},
+}
+
+@article{heskebeck2022mabbci,
+  author  = {Heskebeck, Frida and Bergeling, Carolina and Bernhardsson, Bo},
+  title   = {Multi-Armed Bandits in Brain-Computer Interfaces},
+  journal = {Frontiers in Human Neuroscience},
+  volume  = {16},
+  pages   = {931085},
+  year    = {2022},
+  doi     = {10.3389/fnhum.2022.931085},
+}
+
+% -------- Low-channel / channel selection EEG --------
+
+@article{abdullah2022channelsel,
+  author  = {Abdullah and Faye, Ibrahima and Islam, Md Rafiqul},
+  title   = {{EEG} Channel Selection Techniques in Motor Imagery Applications: A Review and New Perspectives},
+  journal = {Bioengineering},
+  volume  = {9},
+  number  = {12},
+  pages   = {726},
+  year    = {2022},
+  doi     = {10.3390/bioengineering9120726},
+}
+
+% -------- MI-BCI foundations and baselines (CSP, FBCSP, Riemannian, deep, reviews) --------
+
+@article{koles1990csp,
+  author  = {Koles, Zoltan J. and Lazar, Michael S. and Zhou, Steven Z.},
+  title   = {Spatial Patterns Underlying Population Differences in the Background {EEG}},
+  journal = {Brain Topography},
+  volume  = {2},
+  number  = {4},
+  pages   = {275--284},
+  year    = {1990},
+  doi     = {10.1007/BF01129656},
+}
+
+@article{ramoser2000csp,
+  author  = {Ramoser, Herbert and M{\"u}ller-Gerking, Johannes and Pfurtscheller, Gert},
+  title   = {Optimal Spatial Filtering of Single Trial {EEG} During Imagined Hand Movement},
+  journal = {IEEE Transactions on Rehabilitation Engineering},
+  volume  = {8},
+  number  = {4},
+  pages   = {441--446},
+  year    = {2000},
+  doi     = {10.1109/86.895946},
+}
+
+@article{pfurtscheller2001mi,
+  author  = {Pfurtscheller, Gert and Neuper, Christa},
+  title   = {Motor Imagery and Direct Brain-Computer Communication},
+  journal = {Proceedings of the {IEEE}},
+  volume  = {89},
+  number  = {7},
+  pages   = {1123--1134},
+  year    = {2001},
+  doi     = {10.1109/5.939829},
+}
+
+@inproceedings{ang2008fbcsp,
+  author    = {Ang, Kai Keng and Chin, Zheng Yang and Zhang, Haihong and Guan, Cuntai},
+  title     = {Filter Bank Common Spatial Pattern ({FBCSP}) in Brain-Computer Interface},
+  booktitle = {2008 {IEEE} International Joint Conference on Neural Networks ({IJCNN}, {IEEE} World Congress on Computational Intelligence)},
+  year      = {2008},
+  pages     = {2390--2397},
+  doi       = {10.1109/IJCNN.2008.4634130},
+}
+
+@article{ang2012fbcsp,
+  author  = {Ang, Kai Keng and Chin, Zheng Yang and Wang, Chuanchu and Guan, Cuntai and Zhang, Haihong},
+  title   = {Filter Bank Common Spatial Pattern Algorithm on {BCI} Competition {IV} Datasets 2a and 2b},
+  journal = {Frontiers in Neuroscience},
+  volume  = {6},
+  pages   = {39},
+  year    = {2012},
+  doi     = {10.3389/fnins.2012.00039},
+}
+
+@article{barachant2012riemann,
+  author  = {Barachant, Alexandre and Bonnet, St{\'e}phane and Congedo, Marco and Jutten, Christian},
+  title   = {Multiclass Brain-Computer Interface Classification by {R}iemannian Geometry},
+  journal = {IEEE Transactions on Biomedical Engineering},
+  volume  = {59},
+  number  = {4},
+  pages   = {920--928},
+  year    = {2012},
+  doi     = {10.1109/TBME.2011.2172210},
+}
+
+@article{schirrmeister2017deep,
+  author  = {Schirrmeister, Robin Tibor and Springenberg, Jost Tobias and Fiederer, Lukas Dominique Josef and Glasstetter, Martin and Eggensperger, Katharina and Tangermann, Michael and Hutter, Frank and Burgard, Wolfram and Ball, Tonio},
+  title   = {Deep Learning with Convolutional Neural Networks for {EEG} Decoding and Visualization},
+  journal = {Human Brain Mapping},
+  volume  = {38},
+  number  = {11},
+  pages   = {5391--5420},
+  year    = {2017},
+  doi     = {10.1002/hbm.23730},
+}
+
+@article{lawhern2018eegnet,
+  author  = {Lawhern, Vernon J. and Solon, Amelia J. and Waytowich, Nicholas R. and Gordon, Stephen M. and Hung, Chou P. and Lance, Brent J.},
+  title   = {{EEGNet}: A Compact Convolutional Neural Network for {EEG}-Based Brain-Computer Interfaces},
+  journal = {Journal of Neural Engineering},
+  volume  = {15},
+  number  = {5},
+  pages   = {056013},
+  year    = {2018},
+  doi     = {10.1088/1741-2552/aace8c},
+}
+
+@article{lotte2018review,
+  author  = {Lotte, Fabien and Bougrain, Laurent and Cichocki, Andrzej and Clerc, Maureen and Congedo, Marco and Rakotomamonjy, Alain and Yger, Florian},
+  title   = {A Review of Classification Algorithms for {EEG}-Based Brain-Computer Interfaces: A 10-Year Update},
+  journal = {Journal of Neural Engineering},
+  volume  = {15},
+  number  = {3},
+  pages   = {031005},
+  year    = {2018},
+  doi     = {10.1088/1741-2552/aab2f2},
+}
+
+@article{jayaram2018moabb,
+  author  = {Jayaram, Vinay and Barachant, Alexandre},
+  title   = {{MOABB}: Trustworthy Algorithm Benchmarking for {BCIs}},
+  journal = {Journal of Neural Engineering},
+  volume  = {15},
+  number  = {6},
+  pages   = {066011},
+  year    = {2018},
+  doi     = {10.1088/1741-2552/aadea0},
+}
+
+@misc{aristimunha2023moabb,
+  author       = {Aristimunha, Bruno and others},
+  title        = {Mother of All {BCI} Benchmarks ({MOABB})},
+  year         = {2026},
+  howpublished = {Zenodo},
+  version      = {1.5.0},
+  doi          = {10.5281/zenodo.10034223},
+  url          = {https://github.com/NeuroTechX/moabb},
+  note         = {Software, version 1.5.0 (the version used in this thesis). The DOI is the
+                  Zenodo all-versions concept DOI; no version-specific DOI has been minted for 1.5.0.},
+}
+
+@article{kaufman2012leakage,
+  author  = {Kaufman, Shachar and Rosset, Saharon and Perlich, Claudia and Stitelman, Ori},
+  title   = {Leakage in Data Mining: Formulation, Detection, and Avoidance},
+  journal = {ACM Transactions on Knowledge Discovery from Data},
+  volume  = {6},
+  number  = {4},
+  pages   = {15:1--15:21},
+  year    = {2012},
+  doi     = {10.1145/2382577.2382579},
+}
+
+@article{brookshire2024leakage,
+  author  = {Brookshire, Geoffrey and Kasper, Jake and Blauch, Nicholas M. and Wu, Yunan Charles and Glatt, Ryan and Merrill, David A. and Gerrol, Spencer and Yoder, Keith J. and Quirk, Colin and Lucero, Ch{\'e}},
+  title   = {Data Leakage in Deep Learning Studies of Translational {EEG}},
+  journal = {Frontiers in Neuroscience},
+  volume  = {18},
+  pages   = {1373515},
+  year    = {2024},
+  doi     = {10.3389/fnins.2024.1373515},
+}
+
+@article{roy2019dlreview,
+  author  = {Roy, Yannick and Banville, Hubert and Albuquerque, Isabela and Gramfort, Alexandre and Falk, Tiago H. and Faubert, Jocelyn},
+  title   = {Deep Learning-Based Electroencephalography Analysis: A Systematic Review},
+  journal = {Journal of Neural Engineering},
+  volume  = {16},
+  number  = {5},
+  pages   = {051001},
+  year    = {2019},
+  doi     = {10.1088/1741-2552/ab260c},
+}
+
+% -------- Cross-dataset MI cohorts (extension datasets) --------
+
+@article{cho2017mieeg,
+  author  = {Cho, Hohyun and Ahn, Minkyu and Ahn, Sangtae and Kwon, Moonyoung and Jun, Sung Chan},
+  title   = {{EEG} Datasets for Motor Imagery Brain--Computer Interface},
+  journal = {GigaScience},
+  volume  = {6},
+  number  = {7},
+  pages   = {gix034},
+  year    = {2017},
+  doi     = {10.1093/gigascience/gix034},
+}
+
+@article{zheng2017vigilance,
+  author  = {Zheng, Wei-Long and Lu, Bao-Liang},
+  title   = {A Multimodal Approach to Estimating Vigilance Using {EEG} and Forehead {EOG}},
+  journal = {Journal of Neural Engineering},
+  volume  = {14},
+  number  = {2},
+  pages   = {026017},
+  year    = {2017},
+  month   = feb,
+  doi     = {10.1088/1741-2552/aa5a98},
+}
+
+@article{lim2018stew,
+  author  = {Lim, Wei Lun and Sourina, Olga and Wang, Lipo},
+  title   = {{STEW}: Simultaneous Task {EEG} Workload Data Set},
+  journal = {IEEE Transactions on Neural Systems and Rehabilitation Engineering},
+  volume  = {26},
+  number  = {11},
+  pages   = {2106--2114},
+  year    = {2018},
+  month   = nov,
+  doi     = {10.1109/TNSRE.2018.2872924},
+}
+
+% =========================================================================
+% Literature review additions (2026-05-19) — Chapter 2 §Related Work scope.
+% All entries below were verified against canonical pages (DBLP, publisher
+% DOI, arXiv, JMLR/PMLR) on 2026-05-19. Where a page range or article
+% number could not be independently confirmed, the field is omitted rather
+% than guessed.
+% =========================================================================
+
+% -------- Bandits and CCB applied to EEG / BCI (Chapter 2 §Related Work A) --
+
+@article{kocanogullari2018query,
+  author  = {Ko{\c c}anao{\u g}ullar{\i}, Aziz and Marghi, Yeganeh M. and Ak{\c c}akaya, Murat and Erdo{\u g}mu{\c s}, Deniz},
+  title   = {Optimal Query Selection Using Multi-Armed Bandits},
+  journal = {IEEE Signal Processing Letters},
+  volume  = {25},
+  number  = {12},
+  pages   = {1870--1874},
+  year    = {2018},
+  month   = dec,
+  doi     = {10.1109/LSP.2018.2878066},
+}
+
+@misc{zhou2023seqbai,
+  author        = {Zhou, Xin and Hao, Botao and Kang, Jian and Lattimore, Tor and Li, Lexin},
+  title         = {Sequential Best-Arm Identification with Application to Brain--Computer Interface},
+  howpublished  = {arXiv preprint arXiv:2305.11908},
+  year          = {2023},
+  month         = may,
+  archivePrefix = {arXiv},
+  eprint        = {2305.11908},
+  primaryClass  = {cs.HC},
+  url           = {https://arxiv.org/abs/2305.11908},
+}
+
+@article{fidencio2022errprl,
+  author  = {{Xavier Fid{\^e}ncio}, Aline and Klaes, Christian and Iossifidis, Ioannis},
+  title   = {Error-Related Potentials in Reinforcement Learning-Based Brain--Machine Interfaces},
+  journal = {Frontiers in Human Neuroscience},
+  volume  = {16},
+  pages   = {806517},
+  year    = {2022},
+  doi     = {10.3389/fnhum.2022.806517},
+}
+
+% -------- Contextual bandits in adjacent online-decision contexts (Chapter 2 §Related Work B) --
+
+@misc{lei2017actorcriticmhealth,
+  author        = {Lei, Huitian and Lu, Yangyi and Tewari, Ambuj and Murphy, Susan A.},
+  title         = {An Actor-Critic Contextual Bandit Algorithm for Personalized Mobile Health Interventions},
+  howpublished  = {arXiv preprint arXiv:1706.09090},
+  year          = {2017},
+  archivePrefix = {arXiv},
+  eprint        = {1706.09090},
+  primaryClass  = {stat.ML},
+  url           = {https://arxiv.org/abs/1706.09090},
+}
+
+@misc{zhu2018robustmhealth,
+  author        = {Zhu, Feiyun and Guo, Jun and Li, Ruoyu and Huang, Junzhou},
+  title         = {Robust Actor-Critic Contextual Bandit for Mobile Health ({mHealth}) Interventions},
+  howpublished  = {arXiv preprint arXiv:1802.09714},
+  year          = {2018},
+  archivePrefix = {arXiv},
+  eprint        = {1802.09714},
+  primaryClass  = {cs.LG},
+  url           = {https://arxiv.org/abs/1802.09714},
+}
+
+@article{tomkins2021intelligentpooling,
+  author  = {Tomkins, Sabina and Liao, Peng and Klasnja, Predrag V. and Murphy, Susan A.},
+  title   = {{IntelligentPooling}: Practical {T}hompson Sampling for {mHealth}},
+  journal = {Machine Learning},
+  volume  = {110},
+  number  = {9},
+  pages   = {2685--2727},
+  year    = {2021},
+  doi     = {10.1007/s10994-021-05995-8},
+}
+
+@inproceedings{yang2020hatch,
+  author    = {Yang, Mengyue and Li, Qingyang and Qin, Zhiwei and Ye, Jieping},
+  title     = {Hierarchical Adaptive Contextual Bandits for Resource Constraint Based Recommendation},
+  booktitle = {Proceedings of The Web Conference 2020 ({WWW} '20)},
+  publisher = {{ACM}},
+  year      = {2020},
+  doi       = {10.1145/3366423.3380115},
+}
+
+@article{jagerman2020safeexploration,
+  author    = {Jagerman, Rolf and Markov, Ilya and de Rijke, Maarten},
+  title     = {Safe Exploration for Optimizing Contextual Bandits},
+  journal   = {{ACM} Transactions on Information Systems},
+  volume    = {38},
+  number    = {3},
+  year      = {2020},
+  doi       = {10.1145/3385670},
+}
+
+@inproceedings{belfer2022adaptivecurriculum,
+  author    = {Belfer, Robert and Kochmar, Ekaterina and Serban, Iulian Vlad},
+  title     = {Raising Student Completion Rates with Adaptive Curriculum and Contextual Bandits},
+  booktitle = {Proceedings of the 23rd International Conference on Artificial Intelligence in Education ({AIED} 2022)},
+  series    = {Lecture Notes in Computer Science},
+  volume    = {13355},
+  pages     = {724--730},
+  publisher = {Springer},
+  year      = {2022},
+  doi       = {10.1007/978-3-031-11644-5_74},
+}
+
+@article{pacchiano2025stagewise,
+  author  = {Pacchiano, Aldo and Ghavamzadeh, Mohammad and Bartlett, Peter L.},
+  title   = {Contextual Bandits with Stage-wise Constraints},
+  journal = {Journal of Machine Learning Research},
+  volume  = {26},
+  number  = {170},
+  pages   = {1--57},
+  year    = {2025},
+  url     = {http://jmlr.org/papers/v26/24-0267.html},
+}
+
+@inproceedings{rangi2018unifyingbwk,
+  author    = {Rangi, Anshuka and Franceschetti, Massimo and Tran-Thanh, Long},
+  title     = {Unifying the Stochastic and the Adversarial Bandits with Knapsack},
+  booktitle = {Proceedings of the Twenty-Eighth International Joint Conference on Artificial Intelligence ({IJCAI} 2019)},
+  editor    = {Kraus, Sarit},
+  pages     = {3311--3317},
+  publisher = {ijcai.org},
+  year      = {2019},
+  doi       = {10.24963/ijcai.2019/459},
+}
+
+% -------- Bandits under compute / resource constraints (Chapter 2 §Related Work C) --
+
+@article{li2018hyperband,
+  author  = {Li, Lisha and Jamieson, Kevin and DeSalvo, Giulia and Rostamizadeh, Afshin and Talwalkar, Ameet},
+  title   = {{Hyperband}: A Novel Bandit-Based Approach to Hyperparameter Optimization},
+  journal = {Journal of Machine Learning Research},
+  volume  = {18},
+  pages   = {1--52},
+  year    = {2018},
+  url     = {https://jmlr.org/papers/v18/16-558.html},
+}
+
+@inproceedings{jamieson2016nonstochastic,
+  author    = {Jamieson, Kevin and Talwalkar, Ameet},
+  title     = {Non-stochastic Best Arm Identification and Hyperparameter Optimization},
+  booktitle = {Proceedings of the 19th International Conference on Artificial Intelligence and Statistics ({AISTATS})},
+  series    = {Proceedings of Machine Learning Research},
+  volume    = {51},
+  year      = {2016},
+  url       = {https://proceedings.mlr.press/v51/jamieson16.html},
+}
+
+@inproceedings{falkner2018bohb,
+  author    = {Falkner, Stefan and Klein, Aaron and Hutter, Frank},
+  title     = {{BOHB}: Robust and Efficient Hyperparameter Optimization at Scale},
+  booktitle = {Proceedings of the 35th International Conference on Machine Learning ({ICML})},
+  series    = {Proceedings of Machine Learning Research},
+  volume    = {80},
+  pages     = {1437--1446},
+  year      = {2018},
+  url       = {https://proceedings.mlr.press/v80/falkner18a.html},
+}
+
+@inproceedings{li2020asha,
+  author    = {Li, Liam and Jamieson, Kevin and Rostamizadeh, Afshin and Gonina, Ekaterina and Ben-tzur, Jonathan and Hardt, Moritz and Recht, Benjamin and Talwalkar, Ameet},
+  title     = {A System for Massively Parallel Hyperparameter Tuning},
+  booktitle = {Proceedings of Machine Learning and Systems ({MLSys})},
+  year      = {2020},
+  url       = {https://proceedings.mlsys.org/paper_files/paper/2020/hash/a06f20b349c6cf09a6b171c71b88bbfc-Abstract.html},
+}
+
+@inproceedings{ding2013mabbv,
+  author    = {Ding, Wenkui and Qin, Tao and Zhang, Xu-Dong and Liu, Tie-Yan},
+  title     = {Multi-Armed Bandit with Budget Constraint and Variable Costs},
+  booktitle = {Proceedings of the 27th {AAAI} Conference on Artificial Intelligence},
+  publisher = {{AAAI} Press},
+  year      = {2013},
+  doi       = {10.1609/aaai.v27i1.8637},
+}
+
+@misc{wei2024latencyaware,
+  author        = {Wei, Lai and Tewari, Ambuj and Cianfrocco, Michael A.},
+  title         = {Latency-Aware Contextual Bandit: Application to Cryo-{EM} Data Collection},
+  howpublished  = {arXiv preprint arXiv:2410.13109},
+  year          = {2024},
+  archivePrefix = {arXiv},
+  eprint        = {2410.13109},
+  primaryClass  = {stat.ML},
+  url           = {https://arxiv.org/abs/2410.13109},
+}
+
+% -------- Bandits and cognitive workload / state (Chapter 2 §Related Work D) --
+
+@inproceedings{banerjee2024askquery,
+  author    = {Banerjee, Rohan and Jenamani, Rajat Kumar and Vasudev, Sidharth and Nanavati, Amal and Dimitropoulou, Katherine and Dean, Sarah and Bhattacharjee, Tapomayukh},
+  title     = {To Ask or Not To Ask: Human-in-the-loop Contextual Bandits with Applications in Robot-Assisted Feeding},
+  booktitle = {2025 {IEEE} International Conference on Robotics and Automation ({ICRA})},
+  pages     = {1378--1384},
+  publisher = {IEEE},
+  year      = {2025},
+  doi       = {10.1109/ICRA55743.2025.11127795},
+}
+
+% -------- Additional CL datasets adopted (Research wave 1, 2026-05-19) --
+
+@article{albuquerque2020wauc,
+  author  = {Albuquerque, Isabela and Tiwari, Abhishek and Parent, Mark and Cassani, Raymundo and Gagnon, Jean-Fran{\c c}ois and Lafond, Daniel and Tremblay, S{\'e}bastien and Falk, Tiago H.},
+  title   = {{WAUC}: A Multi-Modal Database for Mental Workload Assessment Under Physical Activity},
+  journal = {Frontiers in Neuroscience},
+  volume  = {14},
+  pages   = {549524},
+  year    = {2020},
+  doi     = {10.3389/fnins.2020.549524},
+}
+
+@article{hinss2023cogbci,
+  author  = {Hinss, Marcel F. and Jahanpour, Emilie S. and Somon, Bertille and Pluchon, Lou and Dehais, Fr{\'e}d{\'e}ric and Roy, Rapha{\"e}lle N.},
+  title   = {Open Multi-Session and Multi-Task {EEG} Cognitive Dataset for Passive Brain--Computer Interface Applications},
+  journal = {Scientific Data},
+  volume  = {10},
+  pages   = {85},
+  year    = {2023},
+  doi     = {10.1038/s41597-022-01898-y},
+}
+
+@article{roy2022competition,
+  author  = {Roy, Rapha{\"e}lle N. and Hinss, Marcel F. and Darmet, Ludovic and Ladouce, Simon and Jahanpour, Emilie S. and Somon, Bertille and Xu, Xiaoqi and Drougard, Nicolas and Dehais, Fr{\'e}d{\'e}ric and Lotte, Fabien},
+  title   = {Retrospective on the First Passive Brain--Computer Interface Competition on Cross-Session Workload Estimation},
+  journal = {Frontiers in Neuroergonomics},
+  volume  = {3},
+  pages   = {838342},
+  year    = {2022},
+  doi     = {10.3389/fnrgo.2022.838342},
+}
+
+@thesis{dogan2023,
+  author      = {Do{\u{g}}an, Volkan},
+  title       = {Deep Learning Classification of Cognitive Workload Levels from {EEG} Wavelet Transform Images},
+  type        = {Master's thesis},
+  institution = {Middle East Technical University},
+  year        = {2023},
+}
+
+@article{hernandez2022pilots,
+  author  = {Hern{\'a}ndez-Sabat{\'e}, Aura and Yauri, Jose and Folch, Pau and Piera, Miquel {\`A}ngel and Gil, Debora},
+  title   = {Recognition of the Mental Workloads of Pilots in the Cockpit Using {EEG} Signals},
+  journal = {Applied Sciences},
+  volume  = {12},
+  number  = {5},
+  pages   = {2298},
+  year    = {2022},
+  doi     = {10.3390/app12052298},
+}
+
+@misc{yauri2022uabddd,
+  author       = {Yauri Vidal{\'o}n, Jos{\'e} El{\'i}as and Folch, Pau and {\'A}lvarez, Daniel and Gil, Debora and Hern{\'a}ndez-Sabat{\'e}, Aura},
+  title        = {Dataset to Predict Mental Workload Based on Physiological Data},
+  year         = {2022},
+  howpublished = {Universitat Aut{\`o}noma de Barcelona, Dip{\`o}sit Digital de Documents (DDD) [Data set]},
+  doi          = {10.5565/ddd.uab.cat/259591},
+}
+
+@article{dinges1985pvt,
+  author  = {Dinges, David F. and Powell, John W.},
+  title   = {Microcomputer Analyses of Performance on a Portable, Simple Visual {RT} Task during Sustained Operations},
+  journal = {Behavior Research Methods, Instruments, \& Computers},
+  volume  = {17},
+  number  = {6},
+  pages   = {652--655},
+  year    = {1985},
+  doi     = {10.3758/BF03200977},
+}
+
+@article{basner2011pvt,
+  author  = {Basner, Mathias and Dinges, David F.},
+  title   = {Maximizing Sensitivity of the Psychomotor Vigilance Test ({PVT}) to Sleep Loss},
+  journal = {Sleep},
+  volume  = {34},
+  number  = {5},
+  pages   = {581--591},
+  year    = {2011},
+  doi     = {10.1093/sleep/34.5.581},
+}
+
+% -------- Cognitive-load feature literature (Chapter 3 §Methodology, 2026-05-19) --
+
+@article{klimesch1999alphareview,
+  author  = {Klimesch, Wolfgang},
+  title   = {{EEG} Alpha and Theta Oscillations Reflect Cognitive and Memory Performance: A Review and Analysis},
+  journal = {Brain Research Reviews},
+  volume  = {29},
+  number  = {2-3},
+  pages   = {169--195},
+  year    = {1999},
+  month   = apr,
+  doi     = {10.1016/s0165-0173(98)00056-3},
+}
+
+@article{pope1995engagement,
+  author  = {Pope, Alan T. and Bogart, Edward H. and Bartolome, Debbie S.},
+  title   = {Biocybernetic System Evaluates Indices of Operator Engagement in Automated Task},
+  journal = {Biological Psychology},
+  volume  = {40},
+  number  = {1-2},
+  pages   = {187--195},
+  year    = {1995},
+  month   = may,
+  doi     = {10.1016/0301-0511(95)05116-3},
+}
+
+% -------- Inherited preprocessing methods (Phase A, 2026-05-19) --
+
+@article{mullen2015asr,
+  author  = {Mullen, Tim R. and Kothe, Christian A. E. and Chi, Yu Mike and Ojeda, Alejandro and Kerth, Trevor and Makeig, Scott and Jung, Tzyy-Ping and Cauwenberghs, Gert},
+  title   = {Real-Time Neuroimaging and Cognitive Monitoring Using Wearable Dry {EEG}},
+  journal = {{IEEE} Transactions on Biomedical Engineering},
+  volume  = {62},
+  number  = {11},
+  pages   = {2553--2567},
+  year    = {2015},
+  doi     = {10.1109/TBME.2015.2481482},
+}
+
+% =========================================================================
+% Literature additions (2026-05-29) — three tasks: (1) CCB-rationale
+% precedents (Chapter 1 §Why-Bandits, Chapter 2 §Related Work); (2) the
+% classical-classifier comparators B3–B5 and their canonical sources
+% (Chapter 3 §Baselines, Chapter 4); (3) the preprocessing / signal-
+% processing write-up (Chapter 3 §Preprocessing). Every entry below was
+% verified against a primary index (Crossref / DBLP / PubMed) on 2026-05-29;
+% the verifying source is named per entry. Fields that could not be
+% independently confirmed in-session are OMITTED rather than guessed.
+% =========================================================================
+
+% -------- Closest bandit × EEG and model-selection-as-bandit precedents --
+
+@inproceedings{guo2021p300rl,
+  author    = {Guo, Jiannan and Huang, Zhihua},
+  title     = {A Calibration-Free {P300} {BCI} System Using an On-Line Updating Classifier Based on Reinforcement Learning},
+  booktitle = {2021 14th International Congress on Image and Signal Processing, BioMedical Engineering and Informatics ({CISP-BMEI})},
+  pages     = {1--5},
+  year      = {2021},
+  doi       = {10.1109/CISP-BMEI53629.2021.9624451},
+}
+
+@inproceedings{foster2019modelselection,
+  author    = {Foster, Dylan J. and Krishnamurthy, Akshay and Luo, Haipeng},
+  title     = {Model Selection for Contextual Bandits},
+  booktitle = {Advances in Neural Information Processing Systems 32 ({NeurIPS} 2019)},
+  year      = {2019},
+}
+
+@inproceedings{lin2018adaptivefeature,
+  author    = {Lin, Baihan and Bouneffouf, Djallel and Cecchi, Guillermo A. and Rish, Irina},
+  title     = {Contextual Bandit with Adaptive Feature Extraction},
+  booktitle = {2018 {IEEE} International Conference on Data Mining Workshops ({ICDMW})},
+  pages     = {937--944},
+  year      = {2018},
+  doi       = {10.1109/ICDMW.2018.00136},
+}
+
+% -------- Grounding precedents for the CCB choice (grounding re-search, 2026-05-29):
+%          by-neural-signal, by-task (online model/pipeline selection), by-constraint --
+
+@inproceedings{hsu2024neuralts,
+  author    = {Hsu, Hao-Lun and Gao, Qitong and Pajic, Miroslav},
+  title     = {{$\epsilon$}-Neural {T}hompson Sampling of Deep Brain Stimulation for {P}arkinson Disease Treatment},
+  booktitle = {2024 {ACM/IEEE} 15th International Conference on Cyber-Physical Systems ({ICCPS})},
+  pages     = {224--234},
+  year      = {2024},
+  publisher = {{IEEE}},
+  doi       = {10.1109/ICCPS61052.2024.00027},
+}
+
+@article{wilson2024omsmab,
+  author  = {Wilson, Jobin and Chaudhury, Santanu and Lall, Brejesh},
+  title   = {Multi-Armed Bandit Based Online Model Selection for Concept-Drift Adaptation},
+  journal = {Expert Systems},
+  volume  = {41},
+  number  = {9},
+  pages   = {e13626},
+  year    = {2024},
+  doi     = {10.1111/exsy.13626},
+}
+
+@inproceedings{abdullah2023dqnchannel,
+  author    = {Abdullah and Faye, Ibrahima and Islam, Md Rafiqul},
+  title     = {Electroencephalogram Channel Selection using Deep {Q}-Network},
+  booktitle = {2023 International Conference on Recent Advances in Electrical, Electronics \& Digital Healthcare Technologies ({REEDCON})},
+  pages     = {340--344},
+  year      = {2023},
+  publisher = {{IEEE}},
+  doi       = {10.1109/REEDCON57544.2023.10151281},
+}
+
+% -------- Classical-classifier comparators and their canonical sources --
+
+@article{lotte2007review,
+  author  = {Lotte, Fabien and Congedo, Marco and L{\'e}cuyer, Anatole and Lamarche, Fabrice and Arnaldi, Bruno},
+  title   = {A Review of Classification Algorithms for {EEG}-Based Brain-Computer Interfaces},
+  journal = {Journal of Neural Engineering},
+  volume  = {4},
+  number  = {2},
+  pages   = {R1--R13},
+  year    = {2007},
+  doi     = {10.1088/1741-2560/4/2/R01},
+}
+
+@article{cortes1995svm,
+  author  = {Cortes, Corinna and Vapnik, Vladimir},
+  title   = {Support-Vector Networks},
+  journal = {Machine Learning},
+  volume  = {20},
+  number  = {3},
+  pages   = {273--297},
+  year    = {1995},
+  doi     = {10.1007/BF00994018},
+}
+
+@article{breiman2001randomforests,
+  author  = {Breiman, Leo},
+  title   = {Random Forests},
+  journal = {Machine Learning},
+  volume  = {45},
+  number  = {1},
+  pages   = {5--32},
+  year    = {2001},
+  doi     = {10.1023/A:1010933404324},
+}
+
+@article{steyrl2016randomforest,
+  author  = {Steyrl, David and Scherer, Reinhold and Faller, Josef and M{\"u}ller-Putz, Gernot R.},
+  title   = {Random Forests in Non-Invasive Sensorimotor Rhythm Brain-Computer Interfaces: A Practical and Convenient Non-Linear Classifier},
+  journal = {Biomedical Engineering / Biomedizinische Technik},
+  volume  = {61},
+  number  = {1},
+  pages   = {77--86},
+  year    = {2016},
+  doi     = {10.1515/bmt-2014-0117},
+}
+
+% -------- Signal-processing / preprocessing methods --
+
+@article{welch1967,
+  author  = {Welch, Peter D.},
+  title   = {The Use of Fast {F}ourier Transform for the Estimation of Power Spectra: A Method Based on Time Averaging Over Short, Modified Periodograms},
+  journal = {IEEE Transactions on Audio and Electroacoustics},
+  volume  = {15},
+  number  = {2},
+  pages   = {70--73},
+  year    = {1967},
+  doi     = {10.1109/TAU.1967.1161901},
+}
+
+@article{blankertz2008csp,
+  author  = {Blankertz, Benjamin and Tomioka, Ryota and Lemm, Steven and Kawanabe, Motoaki and M{\"u}ller, Klaus-Robert},
+  title   = {Optimizing Spatial Filters for Robust {EEG} Single-Trial Analysis},
+  journal = {IEEE Signal Processing Magazine},
+  volume  = {25},
+  number  = {1},
+  pages   = {41--56},
+  year    = {2008},
+  doi     = {10.1109/MSP.2008.4408441},
+}
+
+@article{blankertz2011shrinkage,
+  author  = {Blankertz, Benjamin and Lemm, Steven and Treder, Matthias and Haufe, Stefan and M{\"u}ller, Klaus-Robert},
+  title   = {Single-Trial Analysis and Classification of {ERP} Components --- A Tutorial},
+  journal = {NeuroImage},
+  volume  = {56},
+  number  = {2},
+  pages   = {814--825},
+  year    = {2011},
+  doi     = {10.1016/j.neuroimage.2010.06.048},
+}
+
+@article{ledoit2004shrinkage,
+  author  = {Ledoit, Olivier and Wolf, Michael},
+  title   = {A Well-Conditioned Estimator for Large-Dimensional Covariance Matrices},
+  journal = {Journal of Multivariate Analysis},
+  volume  = {88},
+  number  = {2},
+  pages   = {365--411},
+  year    = {2004},
+  doi     = {10.1016/S0047-259X(03)00096-4},
+}
+
+% -------- Interpretation of decoding scores: kappa bands, chance level, usability --
+@article{landis1977observer,
+  author  = {Landis, J. Richard and Koch, Gary G.},
+  title   = {The Measurement of Observer Agreement for Categorical Data},
+  journal = {Biometrics},
+  volume  = {33},
+  number  = {1},
+  pages   = {159--174},
+  year    = {1977},
+  doi     = {10.2307/2529310},
+}
+
+@article{sim2005kappa,
+  author  = {Sim, Julius and Wright, Chris C.},
+  title   = {The Kappa Statistic in Reliability Studies: Use, Interpretation, and Sample Size Requirements},
+  journal = {Physical Therapy},
+  volume  = {85},
+  number  = {3},
+  pages   = {257--268},
+  year    = {2005},
+  doi     = {10.1093/ptj/85.3.257},
+}
+
+@article{combrisson2015exceeding,
+  author  = {Combrisson, Etienne and Jerbi, Karim},
+  title   = {Exceeding Chance Level by Chance: The Caveat of Theoretical Chance Levels in Brain Signal Classification and Statistical Assessment of Decoding Accuracy},
+  journal = {Journal of Neuroscience Methods},
+  volume  = {250},
+  pages   = {126--136},
+  year    = {2015},
+  doi     = {10.1016/j.jneumeth.2015.01.010},
+}
+
+@article{kubler2008paralysis,
+  author  = {K{\"u}bler, Andrea and Birbaumer, Niels},
+  title   = {Brain--Computer Interfaces and Communication in Paralysis: Extinction of Goal Directed Thinking in Completely Paralysed Patients?},
+  journal = {Clinical Neurophysiology},
+  volume  = {119},
+  number  = {11},
+  pages   = {2658--2666},
+  year    = {2008},
+  doi     = {10.1016/j.clinph.2008.06.019},
+}
+
+@article{vidaurre2010cure,
+  author  = {Vidaurre, Carmen and Blankertz, Benjamin},
+  title   = {Towards a Cure for {BCI} Illiteracy},
+  journal = {Brain Topography},
+  volume  = {23},
+  number  = {2},
+  pages   = {194--198},
+  year    = {2010},
+  doi     = {10.1007/s10548-009-0121-6},
+}
